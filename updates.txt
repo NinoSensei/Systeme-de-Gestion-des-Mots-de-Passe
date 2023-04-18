@@ -1,0 +1,33 @@
+the projet name: Password manager
+
+programs:
+    1-password strength checker/generator
+    2-password_DB
+    3-Encryption
+
+1-Password strength checker/generator:
+    functions:
+        i-password generator: generates password of a given length.
+        ii-password checker: checks the strength of a given password.
+
+2-password_DB
+    functions:
+        i-addUser: it countains a callable function that takes a hashed password 
+        and username as arguments, and it stores them in a database.
+        ii-matchUser: it contains a callable function that returns true if a 
+        password of the given username is right, else false.
+
+3-Encryption:
+    functions:
+        i-encrypt_password: returns the hash of a password given as an argument
+        ii-check_password: it checks if the given password matches the hashed password
+    password + salt: both stored in the database, but password is stored hashed, while
+                    salt is stored in plaintext.
+    password + papper: pepper is a short set of characters that is added to a password
+                        to strengthen it.
+
+
+
+to add: 
+    archeive of passwords -> add account to DB: add the condition if set is empty enter first the admin 
+    account, else, add normally
